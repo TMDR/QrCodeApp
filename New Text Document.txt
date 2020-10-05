@@ -1,1 +1,0 @@
-for it to work use Angular 8 and type the command "npm i"
