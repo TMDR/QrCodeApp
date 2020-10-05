@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "lastproject-76f7d": {
+      "hosting": {
+        "QRcodeApp": [
+          "lastproject-76f7d"
+        ]
+      }
+    },
+    "qrproject-37d38": {
+      "hosting": {
+        "QRcodeApp": [
+          "qrproject-37d38"
+        ]
+      }
+    }
+  }
+}

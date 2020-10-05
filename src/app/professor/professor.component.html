@@ -1,0 +1,12 @@
+<app-mainrouting-prof></app-mainrouting-prof>
+<div class="parent" style="display: flex;justify-content: center;">
+ 
+<select  (change)="generate($event.target.value)">
+  <option *ngFor="let Schedule of ScheduleList; index as i; first as isFirst"  [value]="i"  > 
+    {{Schedule.idCourse}}  {{Schedule.idClass}}  {{Schedule.day}} {{Schedule.time}}
+  </option>
+</select>
+</div>
+<div class="child">
+<qrcode [qrdata]="code" [width]="256" [errorCorrectionLevel]="'M'" *ngIf="generateNow" ></qrcode>
+</div>

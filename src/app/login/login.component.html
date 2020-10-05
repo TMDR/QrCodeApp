@@ -1,0 +1,14 @@
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <div class="fadeIn first">
+      <img src="./assets/single_user.png" id="icon" alt="User Icon" />
+    </div>
+
+    <form >
+      <input type="text" id="login" class="fadeIn second" name="UserName" (change)="setUName($event)" placeholder="login">
+      <input type="password" id="password" class="fadeIn third" name="Password" (change)="setPass($event)"  placeholder="password">
+      <input type="button" id = "login" class="fadeIn fourth" value="Log In" (click)="submit()">
+    </form>
+  </div>

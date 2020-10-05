@@ -1,0 +1,32 @@
+<app-mainrouting-admin></app-mainrouting-admin>
+
+<table>
+    <tr>
+        <td>Class ID</td>
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="idclass" placeholder="LF#-#" />
+        </td>
+    </tr><br>
+    <tr>
+        <td>Class Name</td>
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="classname" />
+        </td>
+    </tr><br>
+    <tr>
+        <td>Floor Number</td>
+
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="floornb" />
+
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td></td>
+        <td>
+
+            <button (click)="addClass()">Add Class</button>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,21 @@
+<app-mainrouting-admin></app-mainrouting-admin>
+<table class="table table-striped">
+    <tr>
+        <th scope="col">#Professor ID</th>
+        <th scope="col">First Name </th>
+        <th scope="col">Last Name </th>
+         <th scope="col">Email </th>
+        <th scope="col">Mobile </th>
+        <th scope="col">Address </th>
+    </tr>
+    <tr  *ngFor="let professor of professor; index as i; first as isFirst" >
+        <td>{{professor.idProfessor}}</td>
+        <td>{{professor.firstName}}</td>
+        <td>{{professor.lastName}}</td>
+        <td>{{professor.email}}</td>
+        <td>{{professor.mobile}}</td>
+        <td>{{professor.address}}</td>
+      
+      </tr>
+</table>
+

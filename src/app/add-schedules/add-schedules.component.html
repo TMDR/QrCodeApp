@@ -1,0 +1,73 @@
+<app-mainrouting-admin></app-mainrouting-admin>
+
+<table>
+    <tr>
+        <td>CLASS ID</td>
+        <td>
+            <select class="form-control" [(ngModel)]="idclass">
+                <option *ngFor="let x of class" [ngValue]="x.idClass" >  
+                     {{x.idClass}} 
+                 </option>  
+              </select>
+        </td>
+    </tr><br>
+    <tr>
+        <td>DAY</td>
+        <td>
+            <select class="form-control" [(ngModel)]="day">
+                <option >  
+                     Monday
+                 </option>     
+                <option >  
+                    Tuesday
+                </option> 
+                <option >  
+                    Wednesday
+                </option>
+                <option >  
+                    Thursday
+                </option> 
+                <option >  
+                    Friday
+                </option>   
+              </select>
+        </td>
+    </tr><br>
+    <tr>
+        <td>Time</td>
+
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="time" placeholder="##:##:##" />
+
+        </td>
+    </tr><br>
+    <tr>
+        <td>COURSE ID</td>
+
+        <td>
+            <select class="form-control" [(ngModel)]="idcourse">
+                <option *ngFor="let x of courses" [ngValue]="x.idCourse" >  
+                     {{x.idCourse}} 
+                 </option>  
+              </select>
+
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td>LEVEL ID</td>
+        <select class="form-control" [(ngModel)]="idlevel">
+            <option *ngFor="let x of level" [ngValue]="x.idLevel" >  
+                 {{x.department}} {{x.year}} 
+             </option>  
+          </select>
+    </tr>
+    <br>
+    <tr>
+        <td></td>
+        <td>
+
+            <button (click)="addSchedule()">Add Schedule</button>
+        </td>
+    </tr>
+</table>

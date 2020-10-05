@@ -1,0 +1,18 @@
+<app-mainrouting-student></app-mainrouting-student>
+
+<table class="table table-striped">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Class ID</th>
+        <th scope="col">Session Day</th>
+        <th scope="col">Session Time</th>
+        <th scope="col">Session Course ID</th>
+    </tr>
+    <tr  *ngFor="let Schedule of sechedules; index as i; first as isFirst" >
+        <th scope="col">{{i+1}}</th>
+        <td>{{Schedule.idClass}}</td>
+        <td>{{Schedule.day}}</td>
+        <td>{{Schedule.time}}</td>
+        <td>{{Schedule.idCourse}}</td>
+    </tr>
+</table>

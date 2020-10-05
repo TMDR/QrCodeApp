@@ -1,0 +1,27 @@
+<app-mainrouting-student></app-mainrouting-student>
+<table class="table table-striped">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Class ID</th>
+        <th scope="col">Course ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Grade</th>
+        <th scope="col">Session Day</th>
+        <th scope="col">Session Time</th>
+    </tr>
+    <tr  *ngFor="let res of responeS; index as i; first as isFirst" >
+        <th scope="col">{{i+1}}</th>
+        <td>{{res.IdClass}}</td>
+        <td>{{res.IdCourse}}</td>
+        <td>{{res.FirstName}}</td>
+        <td>{{res.LastName}}</td>
+        <td>{{res.Email}}</td>
+        <td>{{res.Mobile}}</td>
+        <td>{{res.Grade}}</td>
+        <td>{{res.day}}</td>
+        <td>{{res.time}}</td>
+    </tr>
+</table>

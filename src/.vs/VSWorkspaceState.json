@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\login",
+    "\\app\\professor",
+    "\\app\\student"
+  ],
+  "SelectedNode": "\\app\\login\\login.component.ts",
+  "PreviewInSolutionExplorer": false
+}

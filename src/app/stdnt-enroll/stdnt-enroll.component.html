@@ -1,0 +1,29 @@
+<app-mainrouting-admin></app-mainrouting-admin>
+
+<table>
+    <tr>
+        <td>STUDENT ID</td>
+        <td>
+            <input class="form-control" type='number' [(ngModel)]="idstudent" placeholder="####" />
+        </td>
+    </tr><br>
+    <tr>
+        <td>COURSE ID</td>
+        <td>
+            <select class="form-control" [(ngModel)]="idcourse">
+                <option *ngFor="let x of courses" [ngValue]="x.idCourse" >  
+                     {{x.idCourse}} 
+                 </option>  
+              </select>
+
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td></td>
+        <td>
+
+            <button (click)="addCourse()">Add Course</button>
+        </td>
+    </tr>
+</table>

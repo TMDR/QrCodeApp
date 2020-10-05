@@ -1,0 +1,24 @@
+<app-mainrouting-prof></app-mainrouting-prof>
+<table>
+    <tr>
+        <td>Course</td>
+        <td>
+          <select class="form-control" [(ngModel)]="idCourse">
+            <option *ngFor="let x of prof" [ngValue]="x.str" >  
+                 {{x.str}} 
+             </option>  
+          </select>
+        </td>
+      </tr><br>
+    <tr>
+        <td>Date</td>
+        <td><input class="form-control" type='DATE'  [(ngModel)]="date"placeholder="dd/MM/yyyy" /></td>
+      </tr><br>
+      <tr>
+          <td></td>
+          
+        <td>
+              <button  (click)="generateExcel()">Generate EXCEL file</button>
+          </td>
+      </tr>
+</table>

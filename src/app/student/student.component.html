@@ -1,0 +1,4 @@
+<app-mainrouting-student></app-mainrouting-student>
+<zxing-scanner start="true" #scanner (scanSuccess)="scanSuccessHandler($event)"
+               [formats]="['QR_CODE', 'EAN_13','CODE_128', 'DATA_MATRIX']" *ngIf="scanned">
+</zxing-scanner>

@@ -1,0 +1,40 @@
+<app-mainrouting-admin></app-mainrouting-admin>
+
+<table>
+    <tr>
+        <td>COURSE ID</td>
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="idcourse" placeholder="X####" />
+        </td>
+    </tr><br>
+    <tr>
+        <td>Course Name</td>
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="coursename" />
+        </td>
+    </tr><br>
+    <tr>
+        <td>Number of Credits</td>
+
+        <td>
+            <input class="form-control" type='number' [(ngModel)]="creditsnb" />
+
+        </td>
+    </tr><br>
+    <tr>
+        <td>Total Course Duration/semester</td>
+
+        <td>
+            <input class="form-control" type='number' [(ngModel)]="duration" />
+
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td></td>
+        <td>
+
+            <button (click)="addCourse()">Add Course</button>
+        </td>
+    </tr>
+</table>

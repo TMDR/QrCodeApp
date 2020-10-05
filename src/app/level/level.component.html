@@ -1,0 +1,24 @@
+<app-mainrouting-admin></app-mainrouting-admin>
+
+<table>
+    <tr>
+        <td>Year</td>
+        <td>
+            <input class="form-control" type='number' [(ngModel)]="year"  />
+        </td>
+    </tr><br>
+    <tr>
+        <td>Department</td>
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="department" />
+        </td>
+    </tr><br>
+ 
+    <tr>
+        <td></td>
+        <td>
+
+            <button (click)="addLevel()">Add Level</button>
+        </td>
+    </tr>
+</table>

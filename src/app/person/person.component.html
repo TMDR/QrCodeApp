@@ -1,0 +1,147 @@
+<app-mainrouting-admin></app-mainrouting-admin>
+<table>
+    <tr>
+        <td>PERSON ID</td>
+        <td>
+            <input class="form-control" type='number' [(ngModel)]="idperson" placeholder="####" />
+        </td>
+    </tr><br>
+    <tr>
+        <td>UserName</td>
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="username" />
+        </td>
+    </tr><br>
+    <tr>
+        <td>Password</td>
+
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="password" />
+
+        </td>
+    </tr><br>
+    <tr>
+        <td>Type
+
+        <td>
+            <select class="form-control" [(ngModel)]="selectType">
+                <option >  
+                   Professor 
+                 </option>  
+                 <option >  
+                    Student 
+                  </option>  
+              </select>
+
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td></td>
+        <td>
+
+            <button (click)="addPerson()">Add Person</button>
+        </td>
+    </tr>
+</table>
+<hr >
+
+<table *ngIf="showStudent">
+    <tr>
+        <td>STUDENT ID</td>
+        <td>
+            <input class="form-control" type='number'  [(ngModel)]="temp" disabled />
+        </td>
+    </tr><br>
+    <tr>
+        <td>First Name</td>
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="firstname" />
+        </td>
+    </tr><br>
+    <tr>
+        <td>Last Name</td>
+
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="lastname" />
+
+        </td>
+    </tr><br>
+    <tr>
+        <td>Email</td>
+        <td> <input class="form-control" type='text' [(ngModel)]="email" />
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td>Mobile</td>
+        <td> <input class="form-control" type='text' [(ngModel)]="mobile" />
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td>LEVEL ID</td>
+        <select class="form-control" [(ngModel)]="idlevel">
+            <option *ngFor="let x of level" [ngValue]="x.idLevel" >  
+                 {{x.department}} {{x.year}} 
+             </option>  
+          </select>
+    </tr>
+    <br>
+    <tr>
+        <td></td>
+        <td>
+
+            <button (click)="addStudent()">Add Student</button>
+        </td>
+    </tr>
+</table>
+
+
+<table  *ngIf="showProfessor">
+    <tr>
+        <td>PROFESSOR ID</td>
+        <td>
+            <input class="form-control" type='number' [(ngModel)]="temp" placeholder="####" disabled />
+        </td>
+    </tr><br>
+    <tr>
+        <td>First Name</td>
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="firstnamep" />
+        </td>
+    </tr><br>
+    <tr>
+        <td>Last Name</td>
+
+        <td>
+            <input class="form-control" type='text' [(ngModel)]="lastnamep" />
+
+        </td>
+    </tr><br>
+    <tr>
+        <td>Email</td>
+        <td> <input class="form-control" type='text' [(ngModel)]="emailp" />
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td>Mobile</td>
+        <td> <input class="form-control" type='text' [(ngModel)]="mobilep" />
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td>Address</td>
+        <td> <input class="form-control" type='text' [(ngModel)]="address" />
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td></td>
+        <td>
+
+            <button (click)="addProfessor()">Add Professor</button>
+        </td>
+    </tr>
+</table>
